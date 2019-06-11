@@ -9,8 +9,7 @@ public class WelcomeController {
 
     private String message;
 
-    @Value("${welcome.message}")
-    public void WelcomecController(String message) {
+    public WelcomeController(@Value("${some.property}") String message) {
         this.message = message;
     }
 
